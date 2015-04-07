@@ -1,5 +1,6 @@
 int max = 40;
-int dist1 = 275;
+int dist = 273;
+//int dist2 = 
 void myCode()
 {
   //----------------------------------------------------------------------------------------
@@ -27,26 +28,27 @@ void myCode()
   int delay = 6.9;
   //Set forward
   reverse(4);
-  goDist(dist1);
+  goDist(dist);
   brake(4); 
   goFor(delay);
-  goDist(dist1);
-  brake(4); 
+  goDist(dist);
+  brake(4);
   goFor(delay);
-  reverse(4);
-  goDist(dist1);
-  brake(4); 
-  goFor(delay);
-  brake(4); 
+  //reverse(4);
+  //goDist(dist1);
+  //brake(4); 
+  //goFor(delay);
+  //brake(4); 
   // And here--------------------------------------------------------------------------------
 
  // DO NOT REMOVE. end of void myCode()
   
 }
 void goDist(int dist){
-  motorSpeed(4,max);
   int total = getForwardsTotal();
   int start = getForwardsTotal();
+  dist = dist+start;
+  motorSpeed(4,max);
   while(total < dist){
     byte s = map(total,start,dist,40,0);
     motorSpeed(4,s);
