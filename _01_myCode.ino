@@ -56,10 +56,10 @@ void goDist(int dist, int target){
         isStopped = true;
       }
   }
-  if(getVehiclePosition() != target){
-    motorSpeed(4,20);
-    goToAbsolutePosition(target);
-  }
+  //if(getVehiclePosition() != target){
+   // motorSpeed(4,20);
+   // goToAbsolutePosition(target);
+  //}
   brake(4);
 }
 
