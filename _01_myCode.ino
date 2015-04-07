@@ -1,6 +1,6 @@
 int max = 40;
 int dist = 275;
-//int dist2 = 
+int dist2 = 274;
 void myCode()
 {
   //----------------------------------------------------------------------------------------
@@ -31,7 +31,7 @@ void myCode()
   goDist(dist);
   brake(4); 
   goFor(delay);
-  goDist(dist);
+  goDist(dist2);
   brake(4);
   goFor(delay);
   //reverse(4);
