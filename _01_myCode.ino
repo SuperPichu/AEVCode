@@ -27,18 +27,23 @@ void myCode()
   int delay = 6.9;
   //Set forward
   reverse(4);
-  goDist(dist1,520);
+  goDist(dist1);
   brake(4); 
   goFor(delay);
-  motorSpeed(4,20);
-  goFor(3);
+  goDist(dist1);
+  brake(4); 
+  goFor(delay);
+  reverse(4);
+  goDist(dist1);
+  brake(4); 
+  goFor(delay);
   brake(4); 
   // And here--------------------------------------------------------------------------------
 
  // DO NOT REMOVE. end of void myCode()
   
 }
-void goDist(int dist, int target){
+void goDist(int dist){
   motorSpeed(4,max);
   int total = getForwardsTotal();
   int start = getForwardsTotal();
@@ -58,10 +63,6 @@ void goDist(int dist, int target){
         isStopped = true;
       }
   }
-  //if(getVehiclePosition() != target){
-   // motorSpeed(4,20);
-   // goToAbsolutePosition(target);
-  //}
   brake(4);
 }
 
