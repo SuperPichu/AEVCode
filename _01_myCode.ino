@@ -1,5 +1,5 @@
 int max = 40;
-int dist1 = 300;
+int dist1 = 275;
 void myCode()
 {
   //----------------------------------------------------------------------------------------
@@ -51,6 +51,7 @@ void goDist(int dist, int target){
   int xF = 0;
   while(!isStopped){
       int xI = xF;
+      delay(500);
       xF = getVehiclePosition();
       int v = xI-xF;
       if(v == 0){
