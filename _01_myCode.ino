@@ -1,5 +1,5 @@
 int max = 40;
-int dist1 = 325;
+int dist1 = 300;
 void myCode()
 {
   //----------------------------------------------------------------------------------------
@@ -27,7 +27,8 @@ void myCode()
   int delay = 6.9;
   //Set forward
   reverse(4);
-  goDist(dist1,520); 
+  goDist(dist1,520);
+  brake(4); 
   goFor(delay);
   motorSpeed(4,20);
   goFor(3);
