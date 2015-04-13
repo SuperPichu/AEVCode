@@ -46,14 +46,14 @@ void myCode()
   
 }
 void goDist(int dist){
-  int total = getForwardsTotal();
-  int start = getForwardsTotal();
+  int total = getTotalMarks();
+  int start = getTotalMarks();
   dist = dist+start;
   motorSpeed(4,max);
   while(total < dist){
     byte s = map(total,start,dist,40,0);
     motorSpeed(4,s);
-    total = getForwardsTotal();
+    total = getTotalMarks();
   }
   boolean isStopped = false;
   int xF = 0;
