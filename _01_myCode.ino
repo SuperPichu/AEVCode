@@ -1,6 +1,7 @@
 int max = 40;
 int dist = 310;
-int dist2 = 317;
+int dist2 = 315;
+int dist3 = 315;
 void myCode()
 {
   //----------------------------------------------------------------------------------------
@@ -34,11 +35,11 @@ void myCode()
   goDist(dist2);
   brake(4);
   goFor(delay);
-  //reverse(4);
-  //goDist(dist1);
-  //brake(4); 
-  //goFor(delay);
-  //brake(4); 
+  reverse(4);
+  goDist(dist3);
+  brake(4); 
+  goFor(delay);
+  brake(4); 
   // And here--------------------------------------------------------------------------------
 
  // DO NOT REMOVE. end of void myCode()
