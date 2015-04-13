@@ -1,5 +1,5 @@
 int max = 40;
-int dist = 276;
+int dist = 285;
 int dist2 = 317;
 void myCode()
 {
