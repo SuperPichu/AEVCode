@@ -1,6 +1,6 @@
 int max = 40;
 int dist = 310;
-int dist2 = 311;
+int dist2 = 310;
 int dist3 = 375;
 int dist4 = 375;
 void myCode()
@@ -37,11 +37,11 @@ void myCode()
   brake(4);
   goFor(delay);
   reverse(4);
-  goDist(dist3);
+  goDistRev(dist3);
   brake(4); 
   goFor(delay);
   brake(4); 
-  goDist(dist4);
+  goDistRev(dist4);
   brake(4);
   // And here--------------------------------------------------------------------------------
 
@@ -71,6 +71,32 @@ void goDist(int dist){
   }
   brake(4);
 }
+
+void goDistRev(int dist){
+  int total = getTotalMarks();
+  int start = getTotalMarks();
+  dist = dist+start;
+  motorSpeed(4,max);
+  while(total < dist){
+    byte s = map(total,start,dist,40,20);
+    motorSpeed(4,s);
+    total = getTotalMarks();
+  }
+  motorSpeed(4,0);
+  boolean isStopped = false;
+  int xF = 0;
+  while(!isStopped){
+      int xI = xF;
+      delay(500);
+      xF = getVehiclePosition();
+      int v = xI-xF;
+      if(v == 0){
+        isStopped = true;
+      }
+  }
+  brake(4);
+}
+
 
 int getVehiclePosition(){
   return getVehiclePostion();
