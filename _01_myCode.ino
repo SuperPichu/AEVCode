@@ -78,7 +78,7 @@ void goDistRev(int dist){
   dist = dist+start;
   motorSpeed(4,max);
   while(total < dist){
-    byte s = map(total,start,dist,40,20);
+    byte s = map(total,start,dist,40,30);
     motorSpeed(4,s);
     total = getTotalMarks();
   }
