@@ -1,8 +1,8 @@
 int max = 40;
-int dist = 310;
-int dist2 = 307;
-int dist3 = 365;
-int dist4 = 365;
+int dist = 315;
+int dist2 = 312;
+int dist3 = 370;
+int dist4 = 370;
 void myCode()
 {
   //----------------------------------------------------------------------------------------
@@ -78,7 +78,7 @@ void goDistRev(int dist){
   dist = dist+start;
   motorSpeed(4,max);
   while(total < dist){
-    byte s = map(total,start,dist,40,30);
+    byte s = map(total,start,dist,35,30);
     motorSpeed(4,s);
     total = getTotalMarks();
   }
