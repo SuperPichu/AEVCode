@@ -1,7 +1,7 @@
 int max = 40;
-int dist = 315;
-int dist2 = 312;
-int dist3 = 370;
+int dist = 322;
+int dist2 = 313;
+int dist3 = 368;
 int dist4 = 370;
 void myCode()
 {
