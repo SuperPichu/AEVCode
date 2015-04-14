@@ -1,8 +1,8 @@
 int max = 40;
-int dist = 311;
-int dist2 = 313;
-int dist3 = 315;
-int dist4 = 315;
+int dist = 310;
+int dist2 = 311;
+int dist3 = 375;
+int dist4 = 375;
 void myCode()
 {
   //----------------------------------------------------------------------------------------
