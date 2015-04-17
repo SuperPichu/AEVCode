@@ -1,6 +1,6 @@
 int max = 40;
-int dist = 345;
-int dist2 = 370;
+int dist = 344;
+int dist2 = 371;
 int dist3 = 365;
 int dist4 = 380;
 void myCode()
