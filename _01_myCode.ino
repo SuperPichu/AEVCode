@@ -1,8 +1,8 @@
 int max = 40;
-int dist = 322;
-int dist2 = 313;
-int dist3 = 368;
-int dist4 = 370;
+int dist = 332;
+int dist2 = 323;
+int dist3 = 378;
+int dist4 = 380;
 void myCode()
 {
   //----------------------------------------------------------------------------------------
@@ -58,6 +58,7 @@ void goDist(int dist){
     motorSpeed(4,s);
     total = getTotalMarks();
   }
+  delay(3000);
   boolean isStopped = false;
   int xF = 0;
   while(!isStopped){
@@ -82,7 +83,8 @@ void goDistRev(int dist){
     motorSpeed(4,s);
     total = getTotalMarks();
   }
-  motorSpeed(4,0);
+  brake(4);
+  delay(3000);
   boolean isStopped = false;
   int xF = 0;
   while(!isStopped){
